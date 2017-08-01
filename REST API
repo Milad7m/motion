@@ -35,7 +35,7 @@ BaseController.prototype.RESTError = function(type, msg) {
 if(restify[type]) {                       
 return new restify[type](msg.toString())                           
 } else {                              
-console.log("Type " + type + " of error not found".red)                  
+console.log("Type " + type + " of error not found".red)                   
 }                              }                             
 /**                              Takes care of calling the "toHAL" method on every resource before writing it      
 back to the client                              */                              BaseController.prototype.writeHAL = function(res, obj) {     
