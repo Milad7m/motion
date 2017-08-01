@@ -1651,7 +1651,8 @@ swagger.configure('
 http://localhost:9000              
 ', '0.1')                             
 //start the server                         
-server.listen(config.server.port, function() {   
+server.listen(config.server.port, 
+function() {   
 console.log("Server started succesfully…".green)   
 lib.db.connect(function(err) {                          
 if(err) console.log("Error trying to connect to database: ".red, err.red)          
